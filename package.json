@@ -1,5 +1,9 @@
 {
-  "name": "js-course",
+  "name": "add-handlebars",
+  "repository": { 
+  "type": "git", 
+  "url": "https://github.com/afsa-ppsr/ppsr.git" 
+  } 
   "version": "1.0.0",
   "description": "PPSR demo",
   "main": "app.js",
