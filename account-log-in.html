@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+   <title>PPSR Account customer management</title>
+
+    <link rel="stylesheet" href="../ppsr-src/ui/css/style.css">
+    <link rel="stylesheet" href="../ppsr-src/ui/css/afsa-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,medium,bold&subset=latin" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="../ppsr-src/script/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../ppsr-src/script/ppsr-ui.js"></script>
+  
+</head>
+<html>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div class="headerNav">
+
+          <a href="index.html"><img src="../ppsr-src/ui/images/logo.svg" alt="Australian Financial Security Authority"></a>
+          <a href="index.html"><img src="../ppsr-src/ui/images/ppsr-logo.svg" alt="Personal Property Securities Register"></a>
+
+      </div>
+      
+       <div class="menuNav">
+        <div id="menu">
+          <ul class="parentmenu" id="mainMenu" role="menubar" >
+             <li role="menuitem" class=""><a href="index.html">PPSR Home</a></li>
+             <li role="menuitem"><a href="#">PPSR Search</a></li>
+             <li role="menuitem"><a href="#">Account customers</a></li>
+             <li role="menuitem"><a href="#">Secured party groups</a></li>
+             <li role="menuitem"><a href="#">Registrations</a></li>
+             <li role="menuitem"><a href="#">Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="mainContainer">
+      <!-- main column -->
+        <div id="main">    
+
+        <!-- breadcrumbs  -->
+          <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd>Log in</dd></dl></span></div>
+        
+         <h1>Log into your PPSR account</h1>
+         
+         <form>
+           <input type="text" id="username">
+           <label for="username">Username</label><br>
+           <input type="text" id="password">
+           <label for="password">Password</label>
+           <a href="#">Forgot your password?</a>
+           <input type="checkbox" id="declaration">
+           <p>I declare that I have accepted the <a href="#">PPSR Conditions of Use</a> and am undertaking any search by reference to an individual grantor for an authorised purpose</p>
+           <input type="submit" value="Log in">
+          </form>
+        </div>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
