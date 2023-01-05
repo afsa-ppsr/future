@@ -18,6 +18,7 @@
     "@gold.au/buttons": "latest",
     "@gold.au/callout": "latest",
     "@gold.au/control-input": "latest",
+    "@gold.au/core": "^4.0.2",
     "@gold.au/cta-link": "latest",
     "@gold.au/direction-links": "^3.0.0",
     "@gold.au/footer": "latest",
