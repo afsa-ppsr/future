@@ -39,29 +39,40 @@
         <div id="main">    
 
         <!-- breadcrumbs  -->
-          <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd>Account customers</dd></dl></span></div>
+         <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd>Account customers</dd></dl></span></div>
         
          <h1>Create account - Account details (Step 1 of 4)</h1>
 
          <form>
             <input type="checkbox" id="declaration">
             <label for="declaration">I declare that I have read and accept the <a href="https://www.ppsr.gov.au/about-us/technical-information/conditions-and-terms-use?linkid=400077" target="_blank">Account Customer Terms & Conditions</a></label><br>
-            <label for="account-customer-name">Account customer name</label><br>
-            <input type="text" id="account-customer-name"><br>
-            <label for="mailing-address">Mailing address</label><br>
-            <input type="text" id="mailing-address"><br>
-            <label for="suburb">Suburb/city/town</label><br>
-            <input type="text" id="suburb"><br>
-            <label for="state">State/territory/province/region</label><br>
-            <input type="text" id="state"><br>
-            <label for="postcode">Postcode/ZIP</label><br>
-            <input type="text" id="postcode"><br>
-            <label for="country">Country</label>
-            <select id="country" name="country"><br>
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Australia">Australia</option>
-            </select>
-        </form>
+            <div>
+                <label for="account-customer-name">Account customer name</label><br>
+                <input type="text" id="account-customer-name"><br>
+            </div>
+            <div>
+                <label for="mailing-address">Mailing address</label><br>
+                <input type="text" id="mailing-address"><br>
+                <label for="suburb">Suburb/city/town</label><br>
+                <input type="text" id="suburb"><br>
+                <label for="state">State/territory/province/region</label><br>
+                <input type="text" id="state"><br>
+                <label for="postcode">Postcode/ZIP</label><br>
+                <input type="text" id="postcode"><br>
+                <label for="country">Country</label><br>
+                <select id="country" name="country"><br>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </div>
+            <div>
+                <p>Does the account customer have an ABN, ACN, ARBN or ARSN/ARFN?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" value="no">
+            </div>
+         </form>
 
         </div>
       </div>
