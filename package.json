@@ -36,6 +36,13 @@
 		"@gov.au/skip-link": "latest",
 		"@gov.au/tags": "latest",
 		"@gov.au/text-inputs": "latest"
+  },
+"pancake": {
+  "sass": {
+    "modules": false,
+    "location": "pancake/sass/",
+    "name": "auds.scss"
   }
+}
 }
 
