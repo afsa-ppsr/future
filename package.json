@@ -12,11 +12,4 @@
   "dependencies": {
     "express": "^4.18.2",
   },
-  "pancake": {
-    "sass": {
-      "modules": false,
-      "location": "pancake/sass/",
-      "name": "auds.scss"
-    },
-  }
 }
