@@ -1,116 +1,113 @@
 <!doctype html>
 <head>
    <title>PPSR Search</title>
-
-    <link rel="stylesheet" href="../ppsr-src/ui/css/style.css">
-    <link rel="stylesheet" href="../ppsr-src/ui/css/afsa-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,medium,bold&subset=latin" rel="stylesheet" type="text/css" />
-
-    <script type="text/javascript" src="../ppsr-src/script/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="../ppsr-src/script/ppsr-ui.js"></script>
-  
+   <link rel="stylesheet" href="../ppsr-src/ui/css/style.css">
+   <link rel="stylesheet" href="../ppsr-src/ui/css/afsa-style.css">
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,medium,bold&subset=latin" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="../ppsr-src/script/jquery-3.6.1.min.js"></script>
+   <script type="text/javascript" src="../ppsr-src/script/ppsr-ui.js"></script>
 </head>
 <html>
-  <body>
-    <div id="wrap">
-      <!-- header -->
-      <div class="headerNav">
-
-          <a href="index.html"><img src="../ppsr-src/ui/images/logo.svg" alt="Australian Financial Security Authority"></a>
-          <a href="index.html"><img src="../ppsr-src/ui/images/ppsr-logo.svg" alt="Personal Property Securities Register"></a>
-
-      </div>
-      
-       <div class="menuNav">
-        <div id="menu">
-          <ul class="parentmenu" id="mainMenu" role="menubar" >
-             <li role="menuitem" class=""><a href="index.html">PPSR Home</a></li>
-             <li role="menuitem"><a href="#">PPSR Search</a></li>
-             <li role="menuitem"><a href="#">Account customers</a></li>
-             <li role="menuitem"><a href="#">Secured party groups</a></li>
-             <li role="menuitem"><a href="#">Registrations</a></li>
-             <li role="menuitem"><a href="#">Subscriptions</a></li>
-          </ul>
-        </div>
-      </div>
-      
-      <div id="mainContainer">
-      <!-- main column -->
-        <div id="main">    
-
-        <!-- breadcrumbs  -->
-          <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd>PPSR Search</dd></dl></span></div>
-        
-         <h1>PPSR search</h1>
-         <blockquote>
-           Search the PPSR to find if there is a security interest registered over particular serial-numbered or other personal property.
-          </blockquote>
-          
-          <div class="info-group group-background">
-            <div class="info-card">
-              <h2>What to search on the PPSR</h2>
-               <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-             <p>The main search types include motor vehicle, serial number search, organisational grantor and individual grantor search.</p>
-                        </div>
-            <div class="info-card">
-              <h2>PPSR search fees</h2>
-               <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-           <p>A <a href="https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr?si=2&wsi=f867b839-c0c0-4e93-8d72-2c401c0907f8" target="_blank">fee</a> will apply to searches of the PPSR regardless of the search result.</a></p>
+   <body>
+      <div id="wrap">
+         <!-- header -->
+         <div class="headerNav">
+            <a href="index.html"><img src="../ppsr-src/ui/images/logo.svg" alt="Australian Financial Security Authority"></a>
+            <a href="index.html"><img src="../ppsr-src/ui/images/ppsr-logo.svg" alt="Personal Property Securities Register"></a>
+         </div>
+         <div class="menuNav">
+            <div id="menu">
+               <ul class="parentmenu" id="mainMenu" role="menubar" >
+                  <li role="menuitem" class=""><a href="index.html">PPSR Home</a></li>
+                  <li role="menuitem"><a href="#">PPSR Search</a></li>
+                  <li role="menuitem"><a href="#">Account customers</a></li>
+                  <li role="menuitem"><a href="#">Secured party groups</a></li>
+                  <li role="menuitem"><a href="#">Registrations</a></li>
+                  <li role="menuitem"><a href="#">Subscriptions</a></li>
+               </ul>
             </div>
-          </div>
-      
-          <div class="action-items">
-            <h2>Types of searches</h2>
-                      <div class="action-item">
-                        <h3>Quick motor vehicle search</h3>
-                        <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-            <div class="action-item">
-                        <h3>Watercraft</h3>
-              <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-            <div class="action-item">
-              <h3>Serial number</h3>
-              <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-            <div class="action-item">
-              <h3>PPSR Registration number</h3>
-              <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-            <div class="action-item">
-              <h3>Individual grantor</h3>
-              <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-            <div class="action-item">
-              <h3>Organisational grantor</h3>
-              <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-          </div>
-         
-         <div><p>You can retrieve previous search results and search certificates from the options below. For specific information on relevant concepts such a grantor or serial number, please see the <a href="https://www.ppsr.gov.au/glossary?si=2&wsi=f867b839-c0c0-4e93-8d72-2c401c0907f8" target="_blank">Glossary</a>.</p></div>
-         <div class="action-items">
-            <div class="action-item">
-               <h2>Retrieve search result</h2>
-               <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-               <p>This option allows users to retrieve results from previous searches undertaken.</p>
-            </div>
-            <div class="action-item">
-               <h2>Request search certificate</h2>
-               <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
-               <p>This search option allows users to request a search certificate for a search result. Search certificates are provided in PDF format.</p>
-            </div>
+         </div>
+         <div id="mainContainer">
+            <!-- main column -->
+            <div id="main">
+               <!-- breadcrumbs  -->
+               <div id="breadcrumbs">
+                  <span>
+                     <dl>
+                        <dt><a href="#">You are here</a>: </dt>
+                        <dd class="first"><a href="#">PPSR Home</a></dd>
+                        <dd>PPSR Search</dd>
+                     </dl>
+                  </span>
+               </div>
+               <h1>PPSR search</h1>
+               <blockquote>
+                  Search the PPSR to find if there is a security interest registered over particular serial-numbered or other personal property.
+               </blockquote>
+               <div class="info-group group-background">
+                  <div class="info-card">
+                     <h2>What to search on the PPSR</h2>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                     <p>The main search types include motor vehicle, serial number search, organisational grantor and individual grantor search.</p>
+                  </div>
+                  <div class="info-card">
+                     <h2>PPSR search fees</h2>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                     <p>A <a href="https://www.ppsr.gov.au/about-us/laws-rules-and-regulations/fees-using-ppsr?si=2&wsi=f867b839-c0c0-4e93-8d72-2c401c0907f8" target="_blank">fee</a> will apply to searches of the PPSR regardless of the search result.</a></p>
+                  </div>
+               </div>
+               <div class="action-items">
+                  <h2>Types of searches</h2>
+                  <div class="action-item">
+                     <h3>Quick motor vehicle search</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+                  <div class="action-item">
+                     <h3>Watercraft</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+                  <div class="action-item">
+                     <h3>Serial number</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+                  <div class="action-item">
+                     <h3>PPSR Registration number</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+                  <div class="action-item">
+                     <h3>Individual grantor</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+                  <div class="action-item">
+                     <h3>Organisational grantor</h3>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  </div>
+               </div>
+               <div>
+                  <p>You can retrieve previous search results and search certificates from the options below. For specific information on relevant concepts such a grantor or serial number, please see the <a href="https://www.ppsr.gov.au/glossary?si=2&wsi=f867b839-c0c0-4e93-8d72-2c401c0907f8" target="_blank">Glossary</a>.</p>
+               </div>
+               <div class="action-items">
+                  <div class="action-item">
+                     <h2>Retrieve search result</h2>
+                     <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  <p>This option allows users to retrieve results from previous searches undertaken.</p>
+                  </div>
+                 
+               <div class="action-item">
+                  <h2>Request search certificate</h2>
+                  <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
+                  <p>This search option allows users to request a search certificate for a search result. Search certificates are provided in PDF format.</p>
+               </div>
+              
             <div class="action-item">
                <h2>Reissue search certificate</h2>
                <img src="../ppsr-src/ui/images/Account_user_management.svg"></img>
-                      </div>
                <p>A search certificate can be reissued on request. You will need the search certificate number, which appears at the top of the Search certificate issued by the PPSR.</p>
             </div>
+            </div>
          </div>
-       </div>
-      
-    </div>
-    
-  </body>
+      </div>
+      </div>
+      </div>
+   </body>
 </html>
