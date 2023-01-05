@@ -27,7 +27,7 @@
     "@gold.au/keyword-list": "latest",
     "@gold.au/link-list": "latest",
     "@gold.au/main-nav": "latest",
-    "@gold.aupage-alerts": "latest",
+    "@gold.au/page-alerts": "latest",
     "@gold.au/pancake": "^1.4.1",
     "@gold.au/pancake-js": "^1.2.1",
     "@gold.au/pancake-json": "^1.2.0",
