@@ -73,7 +73,7 @@
          <form>
             
             <fieldset class="ppsr-form">
-                <p>Account payment type:</p>
+                <p><strong>Account payment type:</strong></p>
                 <input type="radio" id="pay-as-you-go-by-credit-card" value="Pay as you go by credit card">
                 <label for="pay-as-you-go-by-credit-card">Pay as you go by credit card</label><br>
                 
@@ -81,21 +81,22 @@
                 <label for="pre-pay">Pre-pay</label><br>
             </fieldset>
             <fieldset class="ppsr-form">
-                <p>Send financial statements/tax invoices:</p>
+                <p><strong>Send financial statements/tax invoices:</strong></p>
+                <input type="radio" id="never" value="Never">
                 <label for="never">Never</label><br>
-                <input type="radio" id="never" value="Never"><br>
-
+                
+                <input type="radio" id="monthly" value="Monthly">
                 <label for="monthly">Monthly</label><br>
-                <input type="radio" id="monthly" value="Monthly"><br>
-
+                
+                <input type="radio" id="monthly-suppress" value="Monthly-supress">
                 <label for="monthly-suppress">Monthly (suppress if nil balance/nil activity)</label><br>
-                <input type="radio" id="monthly-suppress" value="Monthly-supress"><br>
-
+                
+                <input type="radio" id="every-transaction" value="Every transaction">
                 <label for="every-transaction">Every transaction </label><br>
-                <input type="radio" id="every-transaction" value="Every transaction"><br>
+                
             </fieldset>
             <fieldset class="ppsr-form">
-                <label for="email-address">Email address for financial statements/tax invoices</label>
+                <label for="email-address">Email address for financial statements/tax invoices</label><br>
                 <input type="text" id="email-address">
             </fieldset>
             <button class="secondary">< Previous</button><button class="secondary">Cancel</button><button class="primary">Next ></button>
