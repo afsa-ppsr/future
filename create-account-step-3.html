@@ -41,7 +41,7 @@
         <!-- breadcrumbs  -->
          <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd>Account customers</dd></dl></span></div>
         
-         <h1>Create account - Payment details (Step 2 of 4)</h1>
+         <h1>Create account - Review (Step 3 of 4)</h1>
 
          <div class="progress-indicator">
             <div class="pi-bundle">
@@ -51,13 +51,13 @@
               <p>Account details</p>
             </div>
             <div class="pi-bundle">
-              <div class="progress-indicator-step active">
+              <div class="progress-indicator-step normal">
                   <div class="progress-indicator-step-n">2</div>
               </div>
               <p>Payment details</p>
             </div>
             <div class="pi-bundle">
-              <div class="progress-indicator-step normal">
+              <div class="progress-indicator-step active">
                   <div class="progress-indicator-step-n">3</div>
               </div>
               <p>Review</p>
@@ -71,34 +71,26 @@
          </div>
 
          <form>
-            <fieldset class="ppsr-form">
-                <p><strong>Account payment type:</strong></p>
-                <input type="radio" id="pay-as-you-go-by-credit-card" value="Pay as you go by credit card">
-                <label for="pay-as-you-go-by-credit-card">Pay as you go by credit card</label><br>
-                
-                <input type="radio" id="pre-pay" value="Pre-pay">
-                <label for="pre-pay">Pre-pay</label><br>
-            </fieldset>
-            <fieldset class="ppsr-form">
-                <p><strong>Send financial statements/tax invoices:</strong></p>
-                <input type="radio" id="never" value="Never">
-                <label for="never">Never</label><br>
-                
-                <input type="radio" id="monthly" value="Monthly">
-                <label for="monthly">Monthly</label><br>
-                
-                <input type="radio" id="monthly-suppress" value="Monthly-supress">
-                <label for="monthly-suppress">Monthly (suppress if nil balance/nil activity)</label><br>
-                
-                <input type="radio" id="every-transaction" value="Every transaction">
-                <label for="every-transaction">Every transaction </label><br>
-                
-            </fieldset>
-            <fieldset class="ppsr-form">
-                <label for="email-address">Email address for financial statements/tax invoices</label><br>
-                <input type="text" id="email-address">
-            </fieldset>
-            <button class="secondary">< Previous</button><button class="secondary">Cancel</button><button class="primary">Next ></button>
+            <h2>Account details</h2>
+            <table>
+                <tr><td>Account customer name:</td><td>Test Account</td></tr>
+                <tr><td>Account registration type:</td><td>Security interest</td></tr>
+                <tr><td>Mailing address:</td><td>1 Sand St, Adelaide, SA AUSTRALIA, 5000</td></tr>
+            </table>
+            <h2>Contact details:</h2>
+            <table>
+                <tr><td>Given names:</td><td>Sam</td></tr>
+                <tr><td>Family name:</td><td>Stone</td></tr>
+                <tr><td>Phone number:</td><td>1</td></tr>
+                <tr><td>Email address:</td><td>test@gmail.com</td></tr>
+            </table>
+            <h2>Payment details</h2>
+            <table>
+                <tr><td>Account payment type:</td><td>PAYG</td></tr>
+                <tr><td>Send financial statements:</td><td>Never</td></tr>
+                <tr><td>Email address for financial statements:</td><td></td></tr>
+            </table>   
+            <button class="secondary">< Previous</button><button class="secondary">Cancel</button><button class="primary">Create account customer</button>
          </form>
 
         </div>
