@@ -90,18 +90,27 @@
                 </div>
             </fieldset>
             <fieldset class="ppsr-form">
-                <p><strong>Send financial statements/tax invoices:</strong></p>
-                <input type="radio" id="never" value="Never">
-                <label for="never">Never</label><br>
-                
-                <input type="radio" id="monthly" value="Monthly">
-                <label for="monthly">Monthly</label><br>
-                
-                <input type="radio" id="monthly-suppress" value="Monthly-supress">
-                <label for="monthly-suppress">Monthly (suppress if nil balance/nil activity)</label><br>
-                
-                <input type="radio" id="every-transaction" value="Every transaction">
-                <label for="every-transaction">Every transaction </label><br>
+                <h2>Send financial statements/tax invoices</h2>
+                <div class="form-elements">
+                  <div class="form-element-left">
+                    <input type="radio" id="never" value="Never">
+                    <label for="never">Never</label><br>
+                    
+                    <input type="radio" id="monthly" value="Monthly">
+                    <label for="monthly">Monthly</label><br>
+                    
+                    <input type="radio" id="monthly-suppress" value="Monthly-supress">
+                    <label for="monthly-suppress">Monthly (suppress if nil balance/nil activity)</label><br>
+                    
+                    <input type="radio" id="every-transaction" value="Every transaction">
+                    <label for="every-transaction">Every transaction </label><br>
+                  </div>
+                  <div class="supporting-text-right">
+                    <p><strong>Pay as you go </strong>accounts must select between receiving tax invoices by email for every transaction or never.</p>
+                    <p><strong>Pre-pay </strong>accounts must select between the monthly statement options.</p>
+                    <p>Tax invoices can be downloaded when needed.</p>
+                  </div>
+                </div>
                 
             </fieldset>
             <fieldset class="ppsr-form">
