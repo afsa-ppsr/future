@@ -122,6 +122,42 @@
              <input type="checkbox" id="physical-address">
              <label for="physical-address">Specify physical address</label>
            </fieldset>
+            
+            <div class="optional-settings">
+               <h2>Optional SPG settings</h2>
+               <p>Select settings that apply to your SPG.</p>
+               <p>You can select more than one option.</p>
+               <p>Click the <strong>+</strong> for more information.</p>
+            </div>
+            
+            <fieldset class="ppsr-form">
+               <div class="accordion-heading">
+                  <div class="accordion">-</div><h3>Send to Business to Government(B2G) mailbox</h3>
+               </div>
+               <div id="b2g-settings">
+                  <input type="checkbox" id="send-notifications">
+                  <label for="send-notifications">Also send notifications to a B2G mailbox</label>
+
+                  <label for="enter-b2g-account-number">Enter B2G account number</label><br>
+                  <input type="text" id="enter-b2g-account-number">
+
+                  <button class="use-account">Retrieve account name</button>
+               </div>
+               
+            </fieldset>
+            
+            <fieldset class="ppsr-form">
+               <div class="accordion-heading">
+               <div class="accordion">-</div><h3>Set the Giving of Notice Identifier(GONI)</h3>
+               <div class="goni-settings">
+                  <input type="checkbox" id="goni">
+                  <label for="goni">Make GONI mandatory for new registrations</label>
+                  <label for="error>Error message if giving of notice identifier not provided:</label>
+                  <textarea id="error" style="width:250px;height:150px;"></textarea><br>
+                  <span>500 characters left</span>
+               </div>
+            </div>
+            </fieldset>
 
            <button class="secondary">< Previous</button> <button class="secondary">Cancel</button><button class="primary">Next ></button>
          </form>
