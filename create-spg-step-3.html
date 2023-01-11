@@ -79,16 +79,30 @@
          <form>          
             <fieldset class="ppsr-form">
               <h3>Set your default</h3>
+               <div class="form-elements">
+                <div class="form-element-left">
                 <input type="checkbox" id="default">
-                <label for="default">Set this secured party as my default</label><br>        
+                <label for="default">Set this secured party as my default</label><br>
+                  </div>
+                  <div class="supporting-text-right">
+                     <p>Selecting this option will prefill your SPG details when you create a registration.</p>
+                  </div>
+               </div>
             </fieldset>
             <fieldset class="ppsr-form">
               <h3>Create account favourite</h3>
-               <input type="checkbox" id="favourite">
-               <label for="favourite">Make this SPG a favourite for this account</label><br>
-              
-              <label for="nickname">Secured party group nickname</label><br>
-              <input type="text" id="nickname">
+               <div class="form-elements">
+                  <div class="form-element-left">
+                     <input type="checkbox" id="favourite">
+                     <label for="favourite">Make this SPG a favourite for this account</label><br>
+
+                    <label for="nickname">Secured party group nickname</label><br>
+                    <input type="text" id="nickname">
+                  </div>
+                  <div class="supporting-text-right">
+                     <p>This shows the SPG in a dropdown box for all users in your account wherever an SPG number can be entered on the PPSR.</p>
+                  </div>
+               </div>
            </fieldset>
 
             <button class="secondary main-buttons">< Previous</button><button class="secondary main-buttons">Cancel</button><button class="primary main-buttons">Next ></button>
