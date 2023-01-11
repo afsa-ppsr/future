@@ -78,24 +78,38 @@
 
          <form>          
             <fieldset class="ppsr-form">
-              <label for="sp">Copy a secured party's details in the address for service</label><br>
-                <select id="sp" name="sp"><br>
-                    <option value="">Select a secured party</option>
-                    <option value="Test SP">Test SP</option>
-                </select>      
-              <button class="cta main-buttons">Copy details</button>
+              <div class="form-elements">
+                <div class="form-element-left">
+                  <label for="sp">Copy a secured party's details in the address for service</label><br>
+                  <select id="sp" name="sp"><br>
+                      <option value="">Select a secured party</option>
+                      <option value="Test SP">Test SP</option>
+                  </select>      
+                  <button class="use-account main-buttons">Copy details</button>
+                </div>
+                <div class="supporting-text-right">
+                  <p>Select a secured party and click <strong>Copy details</strong> to prefill the address for service with the contact details</p>
+                </div>
+              </div>
+              
             </fieldset>
             <fieldset class="ppsr-form">
-                <h3>Secured party group contact details</h3>
-                
-                <label for="contact-name-or-title">Contact name or title</label><br>
-                <input type="text" id="contact-name-or-title"><br>
+              <h3>Secured party group contact details</h3>
+              <div class="form-elements">
+                <div class="form-element-left">
+                  <label for="contact-name-or-title">Contact name or title</label><br>
+                  <input type="text" id="contact-name-or-title"><br>
 
-                <label for="email-address">Email address</label><br>
-                <input type="text" id="email-address"><br>
-               
-                <label for="facisimile-number">Facisimile number</label><br>
-                <input type="text" id="facisimile-number"><br>
+                  <label for="email-address">Email address</label><br>
+                  <input type="text" id="email-address"><br>
+                
+                  <label for="facisimile-number">Facisimile number</label><br>
+                  <input type="text" id="facisimile-number"><br>
+                </div>  
+                <div class="supporting-text-right">
+                  <p>Notifications from the PPSR will be sent to the email address you provide.</p>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="ppsr-form">
                 <h3>Mailing address</h3>
