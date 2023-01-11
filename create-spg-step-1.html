@@ -118,7 +118,7 @@
               <h2>Does the organisation have an ARFN/ARSN?</h2>
               <div class="form-elements">
                 <div class="form-element-left">
-                  <input type="radio" id="yes-arfn" name="arfn">
+                  <input type="radio" id="yes-arfn" name="arfn" onchange="select_arfn_ready();">
                   <label for="yes-arfn">Yes</label><br>
                   
                   <input type="radio" id="no-arfn" name="arfn">
@@ -141,14 +141,6 @@
                 <label for="arfn-arsn">ARSN/ARFN:</label>
                 <input type="text" id="arfn-arsn">
                 <button class="primary main-buttons">Verify</button> 
-              </div>
-              <div class="supporting-text-right">
-                <p><strong>ARSNs</strong> are used for Managed Investment Schemes.</p>
-                <p><strong>ARFNs</strong> are used for sub-funds of Corporate Collective Investment Vehicles.</p>
-                <p>Visit our website for further information on <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">secured party groups</a></p>
-                <p><strong>Please note: </strong>Australian Registered Fund Numbers (ARFNs) will not return verification from ASIC.</p>
-                <p>If you would like to verify the number, you can visit <a href="#">ASIC connect</a>.</p>
-                <p>The absence of the name associated with the identifier from a search certificate or verification statement does not affect the validity of those documents.</p>
               </div>
             </div>    
         </fieldset>
