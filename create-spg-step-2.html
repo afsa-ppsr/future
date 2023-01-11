@@ -85,6 +85,7 @@
                       <option value="">Select a secured party</option>
                       <option value="Test SP">Test SP</option>
                   </select>      
+                  <br>
                   <button class="use-account main-buttons">Copy details</button>
                 </div>
                 <div class="supporting-text-right">
@@ -156,7 +157,8 @@
                <div class="accordion-heading">
                   <div class="accordion">-</div><h3>Send to Business to Government(B2G) mailbox</h3>
                </div>
-               <div id="b2g-settings">
+               <div id="b2g-settings" class="form-elements">
+                <div class="form-element-left">
                   <input type="checkbox" id="send-notifications">
                   <label for="send-notifications">Also send notifications to a B2G mailbox</label><br>
 
@@ -166,6 +168,11 @@
                   <button class="use-account main-buttons">Retrieve account name</button><br>
                   <label><strong>Account name:</strong></label><br>
                   <p>Discovery B2G account</p>
+                </div>
+                <div class="supporting-text-right">
+                  <p>If you do not use a third-party site or have not built your own PPSR system, you do not need to enter an account number.</p>
+                  <p>The B2G account may not allow emails for registration tokens and SPG access codes.</p>
+                </div>
                </div>
                
             </fieldset>
@@ -174,12 +181,18 @@
                <div class="accordion-heading">
                   <div class="accordion">-</div><h3>Set the Giving of Notice Identifier(GONI)</h3>
                </div>
-               <div class="goni-settings">
+               <div id="goni-settings" class="form-elements">
+                <div class="form-element-left">
                   <input type="checkbox" id="goni">
                   <label for="goni">Make GONI mandatory for new registrations</label><br>
                   <label for="error">Error message if giving of notice identifier not provided:</label><br>
                   <textarea id="error"></textarea><br>
                   <span>500 characters left</span>
+                </div>
+                <div class="supporting-text-right">
+                  <p>A giving of notice identifier (GONI) is a reference for your registration (such as a customer reference number or customer/client ID).</p>
+                  <p>Select this field if you want all new registrations to include a GONI.</p>
+                </div>
                </div>
             </fieldset>
 
