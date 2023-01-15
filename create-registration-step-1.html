@@ -1,0 +1,193 @@
+<!doctype html>
+<head>
+   <title>Create a Registration - Step 1</title>
+
+    <link rel="stylesheet" href="../ppsr-src/ui/css/style.css">
+    <link rel="stylesheet" href="../ppsr-src/ui/css/afsa-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:regular,medium,bold&subset=latin" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="../ppsr-src/script/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../ppsr-src/script/ppsr-ui.js"></script>
+    <script type="text/javascript" src="../ppsr-src/script/form.js"></script>
+</head>
+<html>
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <div class="headerNav">
+
+          <a href="index.html"><img src="../ppsr-src/ui/images/logo.svg" alt="Australian Financial Security Authority"></a>
+          <a href="index.html"><img src="../ppsr-src/ui/images/ppsr-logo.svg" alt="Personal Property Securities Register"></a>
+
+      </div>
+      
+       <div class="menuNav">
+        <div id="menu">
+          <ul class="parentmenu" id="mainMenu" role="menubar" >
+             <li role="menuitem" class=""><a href="index.html">PPSR Home</a></li>
+             <li role="menuitem"><a href="#">PPSR Search</a></li>
+             <li role="menuitem"><a href="#">Account customers</a></li>
+             <li role="menuitem"><a href="#">Secured party groups</a></li>
+             <li role="menuitem"><a href="#">Registrations</a></li>
+             <li role="menuitem"><a href="#">Subscriptions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="mainContainer">
+      <!-- main column -->
+        <div id="main">    
+
+        <!-- breadcrumbs  -->
+         <div id="breadcrumbs"><span><dl><dt><a href="#">You are here</a>: </dt><dd class="first"><a href="#">PPSR Home</a></dd><dd><a href="#">Registrations</a></dd><dd>Create a registration</dd></dl></span></div>
+        
+         <h1>Create registration - Start application (Step 1 of 6)</h1>
+
+         <div class="progress-indicator">
+            <div class="pi-bundle">
+              <div class="progress-indicator-step active">
+                  <div class="progress-indicator-step-n">1</div>
+              </div>
+              <p>Start application</p>
+            </div>
+            <div class="pi-bundle">
+              <div class="progress-indicator-step normal">
+                  <div class="progress-indicator-step-n">2</div>
+              </div>
+              <p>Collateral</p>
+            </div>
+            <div class="pi-bundle">
+              <div class="progress-indicator-step normal">
+                  <div class="progress-indicator-step-n">3</div>
+              </div>
+              <p>Grantor (if applicable)</p>
+            </div>
+            <div class="pi-bundle">
+              <div class="progress-indicator-step active">
+                  <div class="progress-indicator-step-n">4</div>
+              </div>
+              <p>Application review</p>
+            </div>
+            <div class="pi-bundle">
+                <div class="progress-indicator-step normal">
+                    <div class="progress-indicator-step-n">5</div>
+                </div>
+                <p>Payment (if applicable)</p>
+              </div>
+           <div class="pi-bundle">
+              <div class="progress-indicator-step normal">
+                  <div class="progress-indicator-step-n">6</div>
+              </div>
+              <p>Confirmation</p>
+            </div>
+         </div>
+
+         <h2>Templates:</h2>
+         <p>For access to registration templates, please contact your PPSR account system administrator(s).</p>
+
+         <h2>Application details</h2>
+         <h3>Registration kind:</h3>
+         <p>Security interest</p>
+
+         <form>
+            <fieldset class="ppsr-form">
+                <h2>Collateral type</h2>
+                <div class="form-elements">
+                  <div class="form-element-left">
+                    <input type="radio" id="commercial" value="Commercial" name="collateral-type">
+                    <label for="commercial">Commercial</label><br>
+                    
+                    <input type="radio" id="consumer" value="Consumer" name="collateral-type">
+                    <label for="consumer">Consumer</label><br>
+                  </div>
+                  <div class="supporting-text-right">
+                    <p><strong>Consumer property </strong>is generally any property held by an individual that isn't used for commercial purposes. This means it's not being used to carry on a business under an ABN.</p>
+                    <p><strong>Commercial property </strong>if the property doesn't meet the description of consumer property, then it's likely commercial property.</p>
+                    <p>For more information, visit the <a href="https://www.ppsr.gov.au/registering/you-create-registration/collateral-type-and-class?si=4&wsi=b981e219-89ca-4617-828b-91a2a6194c67">PPSR website</a>.</p>
+                  </div>
+                </div>
+            </fieldset>
+            <fieldset class="ppsr-form">
+                <h2>Transitional type</h2>
+                <div class="form-elements">
+                    <div class="form-element-left">
+                        <input type="radio" id="not-transitional" value="Not transitional" name="transitional-type">
+                        <label for="not-transitional">Not transitional</label><br>
+                        
+                        <input type="radio" id="transitional" value="Transitional" name="transitional-type">
+                        <label for="transitional">Transitional</label><br>
+                    </div>
+                    <div class="supporting-text-right">
+                        <p><strong>Important: </strong>Selecting the "transitional" radio button in respect of collateral that is not covered by a transitional security agreement will render the registration ineffective with respect to that collateral.</p>
+                    </div>
+                </div>
+            </fieldset>
+            <div id="secured-party-group-details">
+                <h2>Secured party group details</h2>
+                <p>You will need to enter your SPG number. You can create an <a href="#">SPG</a>, if you don not have one.</p>
+                <p>An SPG contains the details of the individuals or organisations with an interest in the property. A secured party is also known as: lender, lessor, consignor, financier, or seller.</p>
+            </div>
+            <fieldset class="ppsr-form">
+                <div class="form-elements">
+                    <div class="form-element-left">
+                        <p><strong>Enter group number or select favourite below:</strong></p>
+                        <input type="radio" id="group-number" name="spg-number">
+                        <label for="group-number">Group number</label><br>
+                        
+                        <input type="radio" id="account-favourite" name="spg-number">
+                        <label for="account-favourite">Account favourite</label><br>
+                        <select>
+                            <option>-select favourite-</option>
+                            <option>Test SPG</option>
+                        </select>
+                        <button class="use-account">Retrieve group</button>
+                        <p>Don't have a secured party group?</p>
+                        <a href="#">Create a secured party group</a>
+                    </div>
+                </div>
+            </fieldset>
+
+         </form>
+          
+          <button class="secondary main-buttons">Cancel</button><button class="secondary main-buttons">Save as pending</button><button class="secondary main-buttons">Save as template</button><button class="primary main-buttons">Next ></button>
+         
+
+        </div>
+      </div>
+      <!-- footer -->
+
+    <div id="foot">
+        <div class="footer">
+            <ul>
+              <li><a class="" href="#">Disclaimer</a></li>
+              <li><a class="" href="#">Privacy and security</a></li>
+              <li><a class="" href="#">Copyright</a></li>
+              <li><a class="" href="#">Accessibility</a></li>
+              <li><a class="" href="#">Contact us</a></li>
+              <li><a class="" href="#">Site map</a></li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+          <div class="footer-logo-content">
+  
+              <div class="footer-copyright">
+                <img src="../ppsr-src/ui/images/CC.svg" alt="Creative Commons">
+                <img src="../ppsr-src/ui/images/CC2.svg" alt="Creative Commons">
+  
+                <p>&copy; Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the CC by 4.0 license.
+                  </p>
+  
+              </div>
+  
+              <div class="footer-afsa">
+                <img src="../ppsr-src/ui/images/AFSA-crest_White.svg" alt="Australian Financial Security Authority">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    
+  </body>
+</html>
