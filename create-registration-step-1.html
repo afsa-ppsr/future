@@ -134,6 +134,7 @@
                         <p><strong>Enter group number or select favourite below:</strong></p>
                         <input type="radio" id="group-number" name="spg-number">
                         <label for="group-number">Group number</label><br>
+                        <input type="text" id="group-number-text"><br>
                         
                         <input type="radio" id="account-favourite" name="spg-number">
                         <label for="account-favourite">Account favourite</label>
@@ -141,14 +142,14 @@
                             <option>-select favourite-</option>
                             <option>Test SPG</option>
                         </select>
-                        <button class="use-account main-buttons">Retrieve group</button>
+                        <button class="use-account main-buttons" type="button" onclick="set_secured_party();">Retrieve group</button>
                         <p>Don't have a secured party group?</p>
                         <a href="#">Create a secured party group</a>
                     </div>
                 </div>
             </fieldset>
 
-            <fieldset class="ppsr-form">
+            <fieldset class="ppsr-form" id="spg-details">
               <table>
                 <tbody>
                   <tr><td><strong>Secured party group: 100 (UX design test)</strong></td><td><a href="#">Use a different secured party group</a></td></tr>
