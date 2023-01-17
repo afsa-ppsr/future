@@ -133,27 +133,28 @@
                     <div class="form-element-left">   
                         <p><strong>Enter group number or select favourite below:</strong></p>
                         <input type="radio" id="group-number" name="spg-number">
-                        <label for="group-number">Group number</label><br>
+                        <label for="group-number">Group number</label>
+                        <input type="text" id="group-number-text"><br>
                         
                         <input type="radio" id="account-favourite" name="spg-number">
                         <label for="account-favourite">Account favourite</label>
                         <select>
                             <option>-select favourite-</option>
                             <option>Test SPG</option>
-                        </select>
-                        <button class="use-account main-buttons">Retrieve group</button>
+                        </select><br>
+                        <button class="use-account main-buttons" type="button" onclick="set_secured_party();">Retrieve group</button>
                         <p>Don't have a secured party group?</p>
                         <a href="#">Create a secured party group</a>
                     </div>
                 </div>
             </fieldset>
 
-            <fieldset class="ppsr-form">
+            <fieldset class="ppsr-form" id="spg-details">
               <table>
                 <tbody>
                   <tr><td><strong>Secured party group: 100 (UX design test)</strong></td><td><a href="#">Use a different secured party group</a></td></tr>
-                  <tr><td colspan="2"><strong>Secured parties</strong></td></tr>
-                  <tr><td colspan="2"><strong>Secured party 1 - ARSN/ARFN 1 - The ARSN/ARFN does not exist in the ASIC register</strong></td></tr>
+                  <tr><td colspan="2"><strong>Secured parties</strong><div class="spg-border-bottom"></div></td></tr>
+                  <tr><td colspan="2"><strong>Secured party 1 - ARSN/ARFN 1 - The ARSN/ARFN does not exist in the ASIC register</strong><div class="spg-border-bottom"></div></td></tr>
                   <tr><td><strong>Address for service</strong></td><td></td></tr>
                   <tr><td>Email:</td><td>test@gmail.com</td></tr>
                   <tr><td>Mailing address</td><td>1 Happy St</td></tr>
