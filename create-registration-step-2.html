@@ -196,15 +196,15 @@
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <input type="radio" id="vin" name="vins">
+                        <input type="radio" id="vin" name="vins" onchange="collateral_show_fieldsets();">
                         <label for="vin">Vehicle identification number (VIN)</label>
                         <input type="text" id="vin-input"><br>
 
-                        <input type="radio" id="chassis" name="vins">
+                        <input type="radio" id="chassis" name="vins" onchange="collateral_show_fieldsets();">
                         <label for="chassis">Chassis number</label>
                         <input type="text" id="chassis-input"><span style="text-indent:0.2rem; display: inline-block;">(Enter only if no VIN)</span><br>
                     
-                        <input type="radio" id="man" name="vins">
+                        <input type="radio" id="man" name="vins" onchange="collateral_show_fieldsets();">
                         <label for="man">Manufacturer's number</label>
                         <input type="text" id="mn-input">
                     </div>
