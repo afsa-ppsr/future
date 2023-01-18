@@ -177,7 +177,7 @@
                 <h3>The collateral is a specific motor vehicle</h3>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <input type="radio" id="yes-specific-mv" value="Yes" name="specific-mv">
+                        <input type="radio" id="yes-specific-mv" value="Yes" name="specific-mv" onchange="specific_motor_vehicle();">
                         <label for="yes-specific-mv">Yes</label><br>
                         
                         <input type="radio" id="no-specific-mv" value="No" name="specific-mv">
@@ -189,7 +189,7 @@
                 </div>
             </fieldset>
             
-            <fieldset class="ppsr-form motor-vehicle">
+            <fieldset class="ppsr-form motor-vehicle" id="motor-vehicle-2">
                 <h3>Vehicle identification numbers</h3>
                 <div class="form-text">
                     <p>Enter one vehicle identification number from the following options:</p>
@@ -211,7 +211,7 @@
                 </div>
             </fieldset>
 
-            <fieldset class="ppsr-form motor-vehicle">
+            <fieldset class="ppsr-form motor-vehicle" id="motor-vehicle-3">
                 <h3>Description</h3>
                 <div class="form-text">
                     <p>Enter a description of the collateral.</p>
