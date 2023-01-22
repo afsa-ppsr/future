@@ -75,18 +75,13 @@
               <p>Confirmation</p>
             </div>
          </div>
-         <hr class="hr-progress-indicator">
 
-         <div class="info-panel">
-          <div class="teal-part">
-              <img src="../ppsr-src/ui/icons/White_Information.svg">
-          </div>
-          <div class="white-part">
+          <div class="callout-info">
             <p class="info-panel-p">A secured party is also known as: lender, consignor, financier, or seller.</p>
             <p class="info-panel-p">The rules for secured party identification are set out in the PPS Regulations.</p>
             <p class="info-panel-p">For more information, visit the <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=8&wsi=5060d205-849e-4493-9f4c-951f4ec8da2d">PPSR website</a>.</p>
           </div>
-       </div>
+      
 
          <div class="accordion-heading">
                <div class="accordion" onclick="toggle_accordion(this);">-</div><h2>Secured Party 1</h2>
@@ -95,6 +90,10 @@
          <form>
             <fieldset class="ppsr-form">
               <h2>Secured party</h2>
+              <div class="form-text">
+                <p>A secured party can be an organisation or an individual (includes sole traders). It is important to ensure that you enter the correct secured party details in accordance with the PPS Regulations.</p>
+                <p>For more information, visit the <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">PPSR website</a>.</p>
+              </div>
               <div class="form-elements">
                 <div class="form-element-left">
                   <input type="radio" id="individual" name="secured-party" onchange="ready();">
@@ -103,15 +102,17 @@
                   <input type="radio" id="organisation" name="secured-party" onchange="ready();">
                   <label for="organisation">Organisation</label><br>
                 </div>
-                <div class="supporting-text-right">
-                  <p>A secured party can be an organisation or an individual (includes sole traders). It is important to ensure that you enter the correct secured party details in accordance with the PPS Regulations.</p>
-                  <p>For more information, visit the <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">PPSR website</a>.</p>
-                </div>
+                
               </div>
 
             </fieldset>
             <fieldset class="ppsr-form" id="individual-secured-party-name">
                 <h2>Secured party name</h2>
+                <div class="form-text">
+                  <p>Enter the Given name(s) and Family name exactly as it appears on the relevant source document.</p>
+                  <p>In most cases, the source document will be the secured party’s current Australian driver's license.</p>
+                  <p>For more information, visit the <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">PPSR website</a>.</p>
+                </div>
                 <div class="form-elements">
                   <div class="form-element-left">
                     <label for="given-names">Given names</label><br>
@@ -119,15 +120,19 @@
                     <label for="family-name">Family name</label><br>
                     <input type="text" id="family-name"><br>
                   </div>
-                  <div class="supporting-text-right">
-                    <p>Enter the Given name(s) and Family name exactly as it appears on the relevant source document.</p>
-                    <p>In most cases, the source document will be the secured party’s current Australian driver's license.</p>
-                    <p>For more information, visit the <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">PPSR website</a>.</p>
-                  </div>
+                  
                 </div>
             </fieldset>
             <fieldset class="ppsr-form" id="organisation-arfn-arsn">
               <h2>Does the organisation have an ARFN/ARSN?</h2>
+              <div class="form-text">
+                <p><strong>ARSNs</strong> are used for Managed Investment Schemes.</p>
+                <p><strong>ARFNs</strong> are used for sub-funds of Corporate Collective Investment Vehicles.</p>
+                <p>Visit our website for further information on <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">secured party groups</a>.</p>
+                <p><strong>Please note: </strong>Australian Registered Fund Numbers (ARFNs) will not return verification from ASIC.</p>
+                <p>If you would like to verify the number, you can visit <a href="#">ASIC connect</a>.</p>
+                <p>The absence of the name associated with the identifier from a search certificate or verification statement does not affect the validity of those documents.</p>
+              </div>
               <div class="form-elements">
                 <div class="form-element-left">
                   <input type="radio" id="yes-arfn" name="arfn" onchange="select_arfn_ready();">
@@ -136,14 +141,7 @@
                   <input type="radio" id="no-arfn" name="arfn" onchange="select_arfn_ready();">
                   <label for="no-arfn">No</label><br>
                 </div>
-                <div class="supporting-text-right">
-                  <p><strong>ARSNs</strong> are used for Managed Investment Schemes.</p>
-                  <p><strong>ARFNs</strong> are used for sub-funds of Corporate Collective Investment Vehicles.</p>
-                  <p>Visit our website for further information on <a href="https://www.ppsr.gov.au/registering/getting-started/create-secured-party-group-spg?si=4&wsi=ee589263-d194-4e94-96e6-09a776d9378f">secured party groups</a>.</p>
-                  <p><strong>Please note: </strong>Australian Registered Fund Numbers (ARFNs) will not return verification from ASIC.</p>
-                  <p>If you would like to verify the number, you can visit <a href="#">ASIC connect</a>.</p>
-                  <p>The absence of the name associated with the identifier from a search certificate or verification statement does not affect the validity of those documents.</p>
-                </div>
+                
               </div>
           </fieldset>
           <fieldset class="ppsr-form" id="verify-arfn-arsn">
@@ -161,12 +159,16 @@
             <p>TEST ORGANISATION</p>
             <p>(Verified by ASIC register)</p>
           </div>
-            <div class="spg-help-text">
-               <p>If the secured party contact details are the same as your account, click <strong>Use account details</strong> to prefill the details below.</p>
-                <button class="use-account main-buttons">Use account details</button>
-            </div>
+            
             <fieldset class="ppsr-form">
                 <h2>Contact details</h2>
+                <div class="form-text">
+                  <p>If the secured party contact details are the same as your account, click <strong>Use account details</strong> to prefill the details below.</p>
+                   <button class="secondary main-buttons">Use account details</button>
+                </div>
+                <div class="form-text">
+                  <p>These contact details are only used if the Registrar needs to contact you or if you need assistance with your SPG.</p>
+                </div>
                 <div class="form-elements">
                   <div class="form-element-left">
                     <label for="contact-name">Contact name</label><br>
@@ -196,14 +198,12 @@
                         <option value="Australia">Australia</option>
                     </select>
                   </div>
-                  <div class="supporting-text-right">
-                    <p>These contact details are only used if the Registrar needs to contact you or if you need assistance with your SPG.</p>
-                  </div>
+                  
                 </div>
             </fieldset>
          </form>
          <button class="secondary main-buttons" id="add-spg" type="button" onclick="add_spg()">Add another secured party</button><br>
-         <button class="secondary main-buttons">Cancel</button><button class="primary main-buttons" type="button" onclick="location.href='create-spg-step-2.html'">Next ></button>
+         <button class="primary main-buttons" type="button" onclick="location.href='create-spg-step-2.html'">Next ></button>
          
 
         </div>
