@@ -206,31 +206,32 @@
                     <label><strong>Account name:</strong></label><br>
                     <p>Discovery B2G account</p>
                   </div>
-                </div>
-                
+                </div> 
                </div>
+
+               <div class="accordion-heading">
+                <div class="accordion acc-optional" onclick="toggle_goni(this);">+</div><h3>Set the Giving of Notice Identifier (GONI)</h3>
+             </div>
+             <div id="goni-settings">
+              <div class="form-text">
+                <p>A giving of notice identifier (GONI) is a reference for your registration (such as a customer reference number or customer/client ID).</p>
+                <p>Select this field if you want all new registrations to include a GONI.</p>
+              </div>
+              <div class="form-elements">
+                <div class="form-element-left">
+                  <input type="checkbox" id="goni">
+                  <label for="goni">Make GONI mandatory for new registrations</label><br>
+                  <label for="error">Error message if giving of notice identifier not provided:</label><br>
+                  <textarea id="error"></textarea><br>
+                  <span>500 characters left</span>
+                </div>
+              </div>
+             </div>
                
             </fieldset>
             
             <fieldset class="ppsr-form">
-               <div class="accordion-heading">
-                  <div class="accordion acc-optional" onclick="toggle_goni(this);">+</div><h3>Set the Giving of Notice Identifier (GONI)</h3>
-               </div>
-               <div id="goni-settings">
-                <div class="form-text">
-                  <p>A giving of notice identifier (GONI) is a reference for your registration (such as a customer reference number or customer/client ID).</p>
-                  <p>Select this field if you want all new registrations to include a GONI.</p>
-                </div>
-                <div class="form-elements">
-                  <div class="form-element-left">
-                    <input type="checkbox" id="goni">
-                    <label for="goni">Make GONI mandatory for new registrations</label><br>
-                    <label for="error">Error message if giving of notice identifier not provided:</label><br>
-                    <textarea id="error"></textarea><br>
-                    <span>500 characters left</span>
-                  </div>
-                </div>
-               </div>
+              
             </fieldset>
 
            <button class="secondary main-buttons" type="button" onclick="location.href='create-spg-step-1.html'">< Previous</button><button class="primary main-buttons" type="button" onclick="location.href='create-spg-step-3.html'">Next ></button>
