@@ -84,9 +84,12 @@
          <form>          
             <fieldset class="ppsr-form">
               <h2>Copy secured party details</h2>
+              <div class="form-text">
+                <p>Select a secured party and click <strong>Copy details</strong> to prefill the address for service with the contact details</p>
+              </div>
               <div class="form-elements">
                 <div class="form-element-left">
-                  <label for="sp">Copy a secured party's details in the address for service</label><br>
+                  <label for="sp">Prefill the Address for Service</label><br>
                   <select id="sp" name="sp"><br>
                       <option value="">Select a secured party</option>
                       <option value="Test SP">Test SP</option>
@@ -94,14 +97,15 @@
                   <br>
                   <button class="secondary main-buttons">Copy details</button>
                 </div>
-                <div class="supporting-text-right">
-                  <p>Select a secured party and click <strong>Copy details</strong> to prefill the address for service with the contact details</p>
-                </div>
+                
               </div>
               
             </fieldset>
             <fieldset class="ppsr-form">
               <h2>Secured party group contact details</h2>
+              <div class="form-text">
+                <p>Notifications from the PPSR will be sent to the email address you provide.</p>
+              </div>
               <div class="form-elements">
                 <div class="form-element-left">
                   <label for="contact-name-or-title">Contact name or title</label><br>
@@ -112,14 +116,14 @@
                 
                   <label for="facisimile-number">Facisimile number</label><br>
                   <input type="text" id="facisimile-number"><br>
-                </div>  
-                <div class="supporting-text-right">
-                  <p>Notifications from the PPSR will be sent to the email address you provide.</p>
-                </div>
+                </div>          
               </div>
             </fieldset>
             <fieldset class="ppsr-form">
                 <h2>Mailing address</h2>
+                <div class="form-text">
+                  <p>The mailing address may be used by someone sending the SPG a formal request.</p>
+                </div>
                 <div class="form-elements">
                   <div class="form-element-left">
                     <label for="street">Street</label><br>
@@ -140,9 +144,7 @@
                         <option value="Australia">Australia</option>
                     </select>
                   </div>
-                  <div class="supporting-text-right">
-                    <p>The mailing address may be used by someone sending the SPG a formal request.</p>
-                  </div>
+                  
                 </div>
             </fieldset>
            
@@ -154,7 +156,7 @@
                   <label for="physical-address">Specify physical address</label>
                   <div id="form-element-left-physical-ad">
                     <input type="checkbox" id="same-as-mailing-address">
-                    <label for="ame-as-mailing-address">Use the same as mailing address</label><br>
+                    <label for="same-as-mailing-address">Use the same as mailing address</label><br>
   
                     <label for="street">Street</label><br>
                     <input type="text" id="street"><br>
