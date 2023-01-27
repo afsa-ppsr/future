@@ -189,7 +189,7 @@
             <fieldset class="ppsr-form motor-vehicle" id="motor-vehicle-2">
                 <h3>Vehicle identification numbers</h3>
                 <div class="form-text">
-                    <p>Enter one vehicle identification number from the following options:</p>
+                    <p>Enter a VIN or a Chassis number. If neither exist, then enter the Manufacturer's number.</p>
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
@@ -205,14 +205,15 @@
                         <label for="man">Manufacturer's number</label>
                         <input type="text" id="mn-input">
                     </div>
-                    <div class="supporting-text-right">
-                        <p>Enter a VIN or a Chassis number. If neither exist, then enter the Manufacturer's number.</p>
-                    </div>
+                    
                 </div>
             </fieldset>
 
             <fieldset class="ppsr-form watercraft" id="watercraft-1">
                 <h3>Watercraft identifier</h3>
+                <div class="form-text">
+                    <p>Additional watercraft information such as make, model and colour are not available from the PPSR and will not be returned as part of the registration.</p>
+                </div>
                 <div class="form-elements">
                     <div class="form-element-left">
                         <label for="watercraft-identifier">Watercraft identifier</label>
@@ -224,9 +225,7 @@
                         </select>
                        <input type="text" id="watercraft-identifier-input">
                     </div>
-                    <div class="supporting-text-right">
-                        <p>Additional watercraft information such as make, model and colour are not available from the PPSR and will not be returned as part of the registration.</p>
-                    </div>
+                    
                 </div>
             </fieldset>
             
@@ -264,17 +263,13 @@
             <fieldset class="ppsr-form motor-vehicle watercraft" id="motor-vehicle-3">
                 <h3>Description</h3>
                 <div class="form-text">
-                    <p>Enter a description of the collateral.</p>
+                    <p>Enter a description of the collateral. It may be appropriate to use the collateral description from the security agreement.</p>
                     <p>Do not enter personal details or identifiers in this field.</p>
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
                         <textarea placeholder="Enter description of the collateral (up to 500 characters)"></textarea><br>
                         <span>500 characters left</span>
-                    </div>
-                    <div class="supporting-text-right">
-                        <p>When providing a description, describe the collateral as specifically as possible. It may be appropriate to use the description of the collateral from the security agreement.
-                        </p>
                     </div>
                 </div>
             </fieldset>
@@ -322,7 +317,7 @@
                         <label for="seven">7 years ($6.00)</label><br>
                         
                         <input type="radio" id="less-than-seven" name="registration-time-length">
-                        <label for="chassis">Less than 7 years (Max fee $6.00)</label><label>End time:</label><input type="text">/<input type="text">/<input type="text"><br>
+                        <label for="chassis">Less than 7 years (Max fee $6.00)</label><label> End time:</label><input type="text" class="date">/<input type="text" class="date">/<input type="text" class="date"><br>
                     </div>
                     <div class="supporting-text-right">
                         <p>Registration fees:</p>
