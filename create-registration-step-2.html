@@ -204,6 +204,7 @@
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
+                        <p class="label">Is the collateral a specific motor vehicle?</p>
                         <input type="radio" id="yes-specific-mv" value="Yes" name="specific-mv" onchange="specific_motor_vehicle();">
                         <label for="yes-specific-mv">Yes</label><br>
                         
@@ -221,6 +222,7 @@
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
+                        <p class="label">Select one of the following options and enter a number:</p>
                         <input type="radio" id="vin" name="vins" onchange="collateral_show_fieldsets();">
                         <label for="vin">Vehicle identification number (VIN)</label>
                         <input type="text" id="vin-input"><br>
@@ -244,6 +246,7 @@
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
+                        <p class="label">Select one of the options below:</p>
                         <label for="watercraft-identifier">Watercraft identifier</label>
                         <select id="watercraft-identifier">
                             <option>-Select-</option>
@@ -261,6 +264,7 @@
                <h3>Category</h3>
                <div class="form-elements">
                   <div class="form-element-left">
+                     <p class="label">Select one of the options below:</p>
                      <select id="aircraft-category" onchange="show_aircraft_details();">
                         <option>-Select a category-</option>
                         <option>Aircraft engine</option>
@@ -276,6 +280,7 @@
                <h3>Category (optional)</h3>
                <div class="form-elements">
                   <div class="form-element-left">
+                    <p class="label">Select one of the options below:</p>
                      <select id="agriculture-category">
                         <option>-Select a category-</option>
                         <option>Crop</option>
@@ -289,6 +294,7 @@
                <h3>Aircraft engine details</h3>
                <div class="form-elements">
                   <div class="form-element-left">
+                     <p>Provide the following details for the aircraft engine:</p>
                      <label for="aircraft-man-number">Manufacturer's number</label><br>
                      <input type="text" id="aircraft-man-number"><br>
                      
@@ -305,6 +311,7 @@
                 <h3>Airframe details</h3>
                 <div class="form-elements">
                    <div class="form-element-left">
+                     <p class="label">Provide the following details for the airframe:</p>
                       <label for="aircraft-man-number">Manufacturer's number</label><br>
                       <input type="text" id="aircraft-man-number"><br>
                       
@@ -327,6 +334,7 @@
                 <h3>Helicopter details</h3>
                 <div class="form-elements">
                    <div class="form-element-left">
+                      <p class="label">Provide the following details for the helicopter:</p>
                       <label for="aircraft-man-number">Manufacturer's number</label><br>
                       <input type="text" id="aircraft-man-number"><br>
                       
@@ -349,6 +357,7 @@
                 <h3>Small aircraft details</h3>
                 <div class="form-elements">
                    <div class="form-element-left">
+                     <p class="label">Provide the following details for the small aircraft:</p>
                       <label for="aircraft-nationality">Aircraft nationality</label><br>
                       <input type="text" id="aircraft-nationality"><br>
 
@@ -362,7 +371,7 @@
                 <h3>Intellectual property identifier</h3>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <p>Does the intellectual property have an identifier?</p>
+                        <p class="label">Does the intellectual property have an identifier?</p>
                         <input type="radio" id="ip-yes" name="ip-identifier">
                         <label for="ip-yes">Yes</label><br>
                         <input type="radio" id="ip-no" name="ip-identifier">
@@ -380,7 +389,7 @@
                 <h3>Intellectual property identifier</h3>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <p>Does the intellectual property have an identifier?</p>
+                        <p class="label">Does the intellectual property have an identifier?</p>
                         <input type="radio" id="ip-yes" name="ip-identifier">
                         <label for="ip-yes">Yes</label>
                         <input type="radio" id="ip-no" name="ip-identifier">
@@ -397,7 +406,7 @@
                 <h3>Intellectual property identifier</h3>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <p>Does the intellectual property have an identifier?</p>
+                        <p class="label">Does the intellectual property have an identifier?</p>
                         <input type="radio" id="ip-yes" name="ip-identifier">
                         <label for="ip-yes">Yes</label>
                         <input type="radio" id="ip-no" name="ip-identifier">
@@ -414,7 +423,7 @@
                 <h3>Intellectual property identifier</h3>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <p>Does the intellectual property have an identifier?</p>
+                        <p class="label">Does the intellectual property have an identifier?</p>
                         <input type="radio" id="ip-yes" name="ip-identifier">
                         <label for="ip-yes">Yes</label>
                         <input type="radio" id="ip-no" name="ip-identifier">
@@ -435,7 +444,8 @@
                 </div>
                 <div class="form-elements">
                     <div class="form-element-left">
-                        <textarea placeholder="Enter description of the collateral (up to 500 characters)"></textarea><br>
+                        <p class="label">Enter a description of the collateral</p>
+                        <textarea></textarea><br>
                         <span>500 characters left</span>
                     </div>
                 </div>
@@ -443,11 +453,9 @@
 
             <fieldset class="ppsr-form motor-vehicle" id="motor-vehicle-4">
                 <h3>Optional</h3>
-                <div class="form-text">
-                    <p>Enter a vehicle registration number below</p>
-                </div>
                 <div class="form-elements">
                     <div class="form-element-left">
+                        <p class="label">Enter a Vehicle Registration Number:</p>
                         <label for="vehicle-reg-number">Vehicle Registration Number</label><br>
                         <input type="text" id="vehicle-reg-number-1">
                     </div>
